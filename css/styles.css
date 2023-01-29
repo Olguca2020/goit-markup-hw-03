@@ -40,7 +40,7 @@ body {
 .header-item.current {color: var(--color-ocean);}
 .logo-web {color: var(--color-iris);}
 .header { 
-  border-bottom: 1px solid --color-cornflower;
+  border-bottom:1px solid var(--color-cornflower);
 }
 .header-container{
    display: flex;   
@@ -297,10 +297,14 @@ body {
 }
 
 .portfolio-item:not(:last-child) {
-   margin-right: 24px;
-   
+   margin-right: 24px;   
 }
-
+.portfolio-box{
+   border: 1px solid var(--color-cornflower);
+   border-top: none;
+   padding-top: 32px;
+   padding-bottom: 32px;
+}
 .portfolio-btn {
    padding: 12px 24px;
    border: 1px solid #E7E9FC;
@@ -328,19 +332,23 @@ body {
 }
 .section-item {   
    flex-basis: calc((100%-2*24)/3);
-   border: 1px solid #E7E9FC;
+   
 }
 
 .section-img {
    
 }
 
-.section-subtitle {  
+.section-subtitle { 
+   padding-left: 16px; 
    line-height: calc(24/16);
    letter-spacing: 0.02em;
 }
 
-.section-kind { 
+.section-kind {
+      padding-left: 16px; 
+      margin-bottom: 8px;
+
       font-weight: 500;
       font-size: 20px;
       line-height: calc(24/20);
