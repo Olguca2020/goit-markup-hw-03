@@ -117,12 +117,13 @@ body {
    }
    /* =====MAIN====== */
      .hero {
-      padding: 180px 473px 300px 473px;
+      padding-top: 180px ;
+      padding-bottom: 300px;
       background-color: var(--color-grey);
       }
   
      .hero-title {   
-        width: 494px;        
+        width: 494px;              
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 48px;
@@ -141,6 +142,7 @@ body {
       padding: 16px 32px;
       min-width: 169px;
       border-radius: 4px;
+      border: none;
 
       font-family: 'Roboto', sans-serif;
       background: var(--color-iris);
