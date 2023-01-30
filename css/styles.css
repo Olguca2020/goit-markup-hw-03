@@ -10,6 +10,9 @@ h1,h2,h3,h4,h5,p {
 img{
 display: block;
 }
+button{
+   cursor: pointer
+}
 :root {
    --color-iris: #4d5ae5;
    --color-ocean: #404bbf;
@@ -32,7 +35,7 @@ body {
   color: var(--color-slate);
 }
 .container{
-   max-width: 1158px;
+   width: 1158px;
    padding: 0 15px;
    margin: 0 auto;
 }
@@ -162,8 +165,10 @@ body {
         }
      /* =====ABOUT===== */
   
-     .about {
-      
+     .about-section {
+      margin-bottom: 0;
+      margin-top: 112px;
+
      }
   
      .about-list {
@@ -172,7 +177,7 @@ body {
      }
   
      .about-item {
-
+      flex-basis: calc((100% - 3 * 24px) / 4);
      }
   
      .about-subtitle {
@@ -185,7 +190,7 @@ body {
      }
   
      .about-descr { 
-    width: 264px;
+    
     
     line-height: calc(24/16);      
     letter-spacing: 0.02em;    
@@ -237,9 +242,11 @@ body {
      }
   
      .team-img {
-      margin-bottom: 32px;
+      
      }
-  
+     .team-block{
+      padding: 32px 16px;
+     }
      .team-name {
       margin-bottom: 8px;
       font-weight: 500;
@@ -334,7 +341,7 @@ body {
    column-gap: 24px;
 }
 .section-item {   
-   flex-basis: calc((100% - 2 * 24)/ 3);
+   flex-basis: calc((100% - 2 * 24px)/ 3);
    
 }
 
